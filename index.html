@@ -1,0 +1,102 @@
+<!doctype html> <!--Starter template Bootstrap-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>Guerreros</title>
+  </head>
+  <body>
+    <header class="bg-danger bg-gradient text-warning text-center container-fluid">
+      <div class="row">
+        <nav class="col-12 col-lg-3">
+          <img src="img/sauron.png" class="img-fluid w-25" alt="sauron.png">
+        </nav>
+        <nav class="col col-lg h2 pt-3">"Uno para dominarlos a todos"</nav>
+      </div>
+    </header>
+    
+    <main class="container-fluid bg-dark text-light">
+      <div class="row pt-3">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-dark border-danger">
+            <div class="card-header bg-danger bg-gradient text-center fas fa-address-card">
+              <span>Ingresar Guerreros</span>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <label class="form-label" for="nombre-txt">Nombre</label>
+                <input class="form-control" id="nombre-txt" type="text">
+              </div>
+              <div class="mb3">
+                <label for="rango-txt" class="form-label">Rango</label>
+                <select class="for-select" id="rango-txt">
+                  <option value="orco">Orco</option>
+                  <!-- <i class="fas fa-star"></i>-->
+                  <option value="urok">Urok</option>
+                  <!-- <i class="fas fa-tint"></i>-->
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="nivel-txt">Nivel</label>
+                <input class="form-control" id="nivel-txt" type="number">
+              </div>
+              <div class="mb3">
+                <label for="rango-txt" class="form-label">Rango</label>
+                <select class="for-select" id="rango-txt">
+                  <option value="seleccionar">Seleccionar</option>
+                  <!-- <i class="fas fa-star"></i>-->
+                  <option value="guerrero">Guerrero</option>
+                  <!-- <i class="fas fa-tint"></i>-->
+                  <option value="capitan">Capitan</option>
+                  <!-- <i class="fas fa-fire"></i>-->
+                  <option value="caudillo">Caudillo</option>
+                  <!-- <i class="fas fa-leaf"></i>-->
+                  <option value="mano-sauron">Mano de Sauron</option>
+                  <!-- <i class="fas fa-bolt"></i>-->
+                </select>
+              </div>
+            </div>
+            <div class="card-footer row">
+              <div class="col col-md col-lg">
+                <button type="button" class="btn btn-success" id="registrar-btn">Registrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md col-lg">
+          <div class="card border-danger">
+            <div class="card-header bg-danger bg-gradient text-center fas fa-address-card">
+              <span class="card-title">Mostrar Guerreros</span>
+            </div>
+            <div class="card-body bg-dark">
+              <table class="table table-hover table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Rango</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody id="tabla-tbody">
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-danger bg-gradient text-warning text-center">
+      <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </body>
+</html>
